@@ -2,7 +2,7 @@
   "name": "BackEnd",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
@@ -13,6 +13,7 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "joi": "^17.3.0",
     "mongoose": "^5.11.14",
     "nodemon": "^2.0.7"
   }

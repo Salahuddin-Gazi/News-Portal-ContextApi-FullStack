@@ -6,19 +6,36 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { NewsProvider } from "./Components/NewsContext";
 import FullNews from "./Components/FullNews";
 import HomePage from "./Components/HomePage";
-import Nav from "./Components/Nav";
+import NavBar from "./Components/Nav";
+import Admin from "./Components/Admin";
+import CurrentNews from "./Components/CurrentNews";
+import AddNews from "./Components/AddNews";
+import DeleteNews from "./Components/DeleteNews";
+// import { Navbar } from "react-bootstrap";
 
 function App() {
   return (
     <NewsProvider>
       <div>
         <Router>
-          <Nav />
+          <NavBar />
           <Route path="/" exact>
             <HomePage />
           </Route>
           <Route path="/fullnews">
             <FullNews />
+          </Route>
+          <Route path="/admin">
+            <Admin />
+          </Route>
+          <Route path="/currentNews">
+            <CurrentNews />
+          </Route>
+          <Route path="/addNews">
+            <AddNews />
+          </Route>
+          <Route path="/deleteNews">
+            <DeleteNews />
           </Route>
         </Router>
       </div>
